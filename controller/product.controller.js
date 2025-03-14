@@ -1,0 +1,1 @@
+const Product = requie('../../model/product.model.js')
