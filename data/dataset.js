@@ -18,9 +18,9 @@ exports.dataset = async () => {
     
     events.forEach(e => {
         newEvent.push({
-            name: e.title,
-            description: e.lieu,
-            price: e.date
+            title: e.title,
+            lieu: e.lieu,
+            date: e.date
         })
     });
 

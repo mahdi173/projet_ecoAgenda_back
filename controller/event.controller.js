@@ -4,7 +4,7 @@ require("dotenv").config();
 const paginationLimit =  parseInt(process.env.PAGINATION_LIMIT);
 
 exports.create = async (req, res, next) =>{
-    let event = await Event.create(req.body.product);
+    let event = await Event.create(req.body);
     res.status(201).json(event);
 }
 
