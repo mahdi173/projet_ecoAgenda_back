@@ -28,6 +28,18 @@ Bonne intégration avec Node.js via Sequelize ou mysql2.
 
 Fiabilité et support.
 
+## Éco-Conception
+
+Dans une démarche d'éco-conception, nous avons pris plusieurs mesures pour minimiser l'impact environnemental de l'application :
+
+ - Optimisation du code : Réduction du nombre de requêtes, de plugins et de code pour améliorer la rapidité d'exécution.
+
+ - Utilisation d'outils légers : Choix de technologies performantes et peu gourmandes en ressources.
+
+ - Minimisation des ressources chargées : Chargement différé des données (ex : pagination avec limit).
+
+ - Respect des bonnes pratiques de développement durable : Utilisation de bases de données optimisées.
+
 ## Installation et Configuration
 
 ### 1. Cloner le projet

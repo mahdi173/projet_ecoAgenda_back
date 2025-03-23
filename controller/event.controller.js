@@ -8,16 +8,10 @@ exports.create = async (req, res, next) =>{
     res.status(201).json(event);
 }
 
-exports.getById = async (req, res, next) =>{
-    let id = req.params.id;
-    console.log(id);
-    let event = await Event.findOne({where: {id: id}});
-    res.status(201).json(event);
-}
-
 exports.getPagination = async (req, res, next) =>{
     let events = await Event.findAll({
-        limit: paginationLimit, offset: (req.params.page-1)*paginationLimit
+        limit: paginationLimit, offset: (req.params.page-1)*paginationLimit,
+        order: [['createdAt', 'DESC']]
     });
     res.status(200).json(events);
 }
